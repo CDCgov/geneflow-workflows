@@ -1,27 +1,36 @@
-# CDCgov GitHub Organization Open Source Project Template
+# GeneFlow Public Reference Workflows
 
-**Template for clearance: This project serves as a template to aid projects in starting up and moving through clearance procedures. To start, create a new repository and implement the required [open practices](open_practices.md), train on and agree to adhere to the organization's [rules of behavior](rules_of_behavior.md), and [send a request through the create repo form](https://forms.office.com/Pages/ResponsePage.aspx?id=aQjnnNtg_USr6NJ2cHf8j44WSiOI6uNOvdWse4I-C2NUNk43NzMwODJTRzA4NFpCUk1RRU83RTFNVi4u) using language from this template as a Guide.**
+This repository contains a catalog of public reference workflows for GeneFlow, a workflow engine for bioinformatics and public health analytics. 
 
-**General disclaimer** This repository was created for use by CDC programs to collaborate on public health related projects in support of the [CDC mission](https://www.cdc.gov/about/organization/mission.htm).  GitHub is not hosted by the CDC, but is a third party website used by CDC and its partners to share information and collaborate on software. CDC use of GitHub does not imply an endorsement of any one particular service, product, or enterprise. 
+GeneFlow is open source and can be found here: https://github.com/CDCgov/geneflow
 
-## Access Request, Repo Creation Request
+## Public Reference Workflows
 
-* [CDC GitHub Open Project Request Form](https://forms.office.com/Pages/ResponsePage.aspx?id=aQjnnNtg_USr6NJ2cHf8j44WSiOI6uNOvdWse4I-C2NUNk43NzMwODJTRzA4NFpCUk1RRU83RTFNVi4u) _[Requires a CDC Office365 login, if you do not have a CDC Office365 please ask a friend who does to submit the request on your behalf]_
+Public reference workflows and apps can be found here: https://gitlab.com/geneflow. Information for each workflow can be found below: 
 
-## Related documents
+* [Nanopore Amplicon Dereplication](https://gitlab.com/geneflow/workflows/nanopore-amplicon-dereplication-gf.git)
+    * This workflow takes basecalled, demultiplexed, and trimmed FASTQ files from Nanopore sequencing. It uses Canu to dereplicate the reads into amplicons, then uses Medaka to polish the amplicons using the trimmed FASTQ files. 
+    * GeneFlow Version: 1.x
+    * GeneFlow Apps:
+        * [Canu](https://gitlab.com/geneflow/apps/canu-gf.git)
+        * [Medaka](https://gitlab.com/geneflow/apps/medaka-gf.git)
 
-* [Open Practices](open_practices.md)
-* [Rules of Behavior](rules_of_behavior.md)
-* [Thanks and Acknowledgements](thanks.md)
-* [Disclaimer](DISCLAIMER.md)
-* [Contribution Notice](CONTRIBUTING.md)
-* [Code of Conduct](code-of-conduct.md)
+* [SanitizeMe](https://gitlab.com/geneflow/workflows/sanitize-me-gf.git)
+    * This workflow removes host sequences from reads using Minimap2 and SAMTools.
+    * GeneFlow Version: 1.x
+    * GeneFlow Apps:
+        * [Minimap2](https://gitlab.com/geneflow/apps/minimap2-gf.git)
+        * [SAMTools Filter Flags](https://gitlab.com/geneflow/apps/samtools-filter-flags-gf.git)
+        * [SAMTools BAM to FASTQ](https://gitlab.com/geneflow/apps/samtools-bam-to-fastq-gf.git)
+    
+## Development Team and Support
 
-## Overview
+GeneFlow and the public reference workflows were developed by the GDIT Scientific Computing and Bioinformatics Support (SCBS) team for the Office of Advanced Molecular Detection (OAMD) at the CDC.
 
-Describe the purpose of your project. Add additional sections as necessary to help collaborators and potential collaborators understand and use your project.
+For technical support, please contact oamdsupport@cdc.gov.
   
-## Public Domain Standard Notice
+## Public Domain
+
 This repository constitutes a work of the United States Government and is not
 subject to domestic copyright protection under 17 USC § 105. This repository is in
 the public domain within the United States, and copyright and related rights in
@@ -30,7 +39,8 @@ All contributions to this repository will be released under the CC0 dedication. 
 submitting a pull request you are agreeing to comply with this waiver of
 copyright interest.
 
-## License Standard Notice
+## License
+
 The repository utilizes code licensed under the terms of the Apache Software
 License and therefore is licensed under ASL v2 or later.
 
@@ -47,14 +57,16 @@ program. If not, see http://www.apache.org/licenses/LICENSE-2.0.html
 
 The source code forked from other open source projects will inherit its license.
 
-## Privacy Standard Notice
+## Privacy
+
 This repository contains only non-sensitive, publicly available data and
 information. All material and community participation is covered by the
-[Disclaimer](https://github.com/CDCgov/template/blob/master/DISCLAIMER.md)
+Surveillance Platform [Disclaimer](https://github.com/CDCgov/template/blob/master/DISCLAIMER.md)
 and [Code of Conduct](https://github.com/CDCgov/template/blob/master/code-of-conduct.md).
-For more information about CDC's privacy policy, please visit [http://www.cdc.gov/other/privacy.html](https://www.cdc.gov/other/privacy.html).
+For more information about CDC's privacy policy, please visit [http://www.cdc.gov/privacy.html](http://www.cdc.gov/privacy.html).
 
-## Contributing Standard Notice
+## Contributing
+
 Anyone is encouraged to contribute to the repository by [forking](https://help.github.com/articles/fork-a-repo)
 and submitting a pull request. (If you are new to GitHub, you might start with a
 [basic tutorial](https://help.github.com/articles/set-up-git).) By contributing
@@ -64,15 +76,19 @@ non-exclusive, transferable license to all users under the terms of the
 later.
 
 All comments, messages, pull requests, and other submissions received through
-CDC including this GitHub page may be are subject to applicable federal law, including but not limited to the Federal Records Act, and may be archived. Learn more at [http://www.cdc.gov/other/privacy.html](http://www.cdc.gov/other/privacy.html).
+CDC including this GitHub page are subject to the [Presidential Records Act](http://www.archives.gov/about/laws/presidential-records.html)
+and may be archived. Learn more at [http://www.cdc.gov/other/privacy.html](http://www.cdc.gov/other/privacy.html).
 
-## Records Management Standard Notice
+## Records
+
 This repository is not a source of government records, but is a copy to increase
 collaboration and collaborative potential. All government records will be
 published through the [CDC web site](http://www.cdc.gov).
 
-## Additional Standard Notices
+## Notices
+
 Please refer to [CDC's Template Repository](https://github.com/CDCgov/template)
 for more information about [contributing to this repository](https://github.com/CDCgov/template/blob/master/CONTRIBUTING.md),
 [public domain notices and disclaimers](https://github.com/CDCgov/template/blob/master/DISCLAIMER.md),
 and [code of conduct](https://github.com/CDCgov/template/blob/master/code-of-conduct.md).
+
