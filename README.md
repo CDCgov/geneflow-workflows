@@ -8,6 +8,13 @@ GeneFlow is open source and can be found here: https://github.com/CDCgov/geneflo
 
 Public reference workflows and apps can be found here: https://gitlab.com/geneflow. Information for each workflow can be found below: 
 
+* [BWA Sequence Alignment](https://gitlab.com/geneflow/workflows/bwa-gf.git)
+    * This workflow aligns paired-end sequences to a reference using BWA. 
+    * GeneFlow Version: 1.x
+    * GeneFlow Apps:
+        * [BWA Index](https://gitlab.com/geneflow/apps/bwa-index-gf.git)
+        * [BWA Mem](https://gitlab.com/geneflow/apps/bwa-mem-gf.git)
+
 * [Nanopore Amplicon Dereplication](https://gitlab.com/geneflow/workflows/nanopore-amplicon-dereplication-gf.git)
     * This workflow takes basecalled, demultiplexed, and trimmed FASTQ files from Nanopore sequencing. It uses Canu to dereplicate the reads into amplicons, then uses Medaka to polish the amplicons using the trimmed FASTQ files. 
     * GeneFlow Version: 1.x
