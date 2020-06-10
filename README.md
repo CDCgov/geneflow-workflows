@@ -2,7 +2,12 @@
 
 This repository contains a catalog of public reference workflows for GeneFlow, a workflow engine for bioinformatics and public health analytics. 
 
-GeneFlow is open source and can be found here: https://github.com/CDCgov/geneflow
+GeneFlow is open source: 
+
+* [Version 1.x](https://github.com/CDCgov/geneflow)
+
+* [Version 2.x](https://github.com/CDCgov/geneflow2)
+
 
 ## Public Reference Workflows
 
@@ -15,12 +20,31 @@ Public reference workflows and apps can be found here: https://gitlab.com/genefl
         * [BWA Index](https://gitlab.com/geneflow/apps/bwa-index-gf.git)
         * [BWA Mem](https://gitlab.com/geneflow/apps/bwa-mem-gf.git)
 
+* [BWA Sequence Alignment (v2)](https://gitlab.com/geneflow/workflows/bwa-gf2.git)
+    * This workflow aligns paired-end sequences to a reference using BWA. 
+    * GeneFlow Version: 2.x
+    * GeneFlow Apps:
+        * [BWA Index](https://gitlab.com/geneflow/apps/bwa-index-gf2.git)
+        * [BWA Mem](https://gitlab.com/geneflow/apps/bwa-mem-gf2.git)
+
 * [Nanopore Amplicon Dereplication](https://gitlab.com/geneflow/workflows/nanopore-amplicon-dereplication-gf.git)
     * This workflow takes basecalled, demultiplexed, and trimmed FASTQ files from Nanopore sequencing. It uses Canu to dereplicate the reads into amplicons, then uses Medaka to polish the amplicons using the trimmed FASTQ files. 
     * GeneFlow Version: 1.x
     * GeneFlow Apps:
         * [Canu](https://gitlab.com/geneflow/apps/canu-gf.git)
         * [Medaka](https://gitlab.com/geneflow/apps/medaka-gf.git)
+
+* [NCBI SRA Upload](https://gitlab.com/geneflow/workflows/ncbi-lftp-sra-gridengine-upload-tool-workflow.git)
+    * This workflow is an FTP bulk upload tool for NCBI SRA data. 
+    * GeneFlow Version: 2.x
+    * GeneFlow Apps:
+        * [NCBI SRA FTP Uploader](https://gitlab.com/geneflow/apps/ncbi-lftp-sra-gridengine-upload-tool-gf2.git)
+
+* [NCBI GEO Upload](https://gitlab.com/geneflow/workflows/ncbi-lftp-geo-upload-tool-workflow.git)
+    * This workflow is an FTP build upload tool for NCBI GEO data. 
+    * GeneFlow Version: 1.x
+    * GeneFlow Apps:
+        * [NCBI GEO FTP Uploader](https://gitlab.com/geneflow/apps/ncbi-lftp-geo-upload-tool-gf.git)
 
 * [SanitizeMe](https://gitlab.com/geneflow/workflows/sanitize-me-gf.git)
     * This workflow removes host sequences from reads using Minimap2 and SAMTools.
@@ -29,7 +53,14 @@ Public reference workflows and apps can be found here: https://gitlab.com/genefl
         * [Minimap2](https://gitlab.com/geneflow/apps/minimap2-gf.git)
         * [SAMTools Filter Flags](https://gitlab.com/geneflow/apps/samtools-filter-flags-gf.git)
         * [SAMTools BAM to FASTQ](https://gitlab.com/geneflow/apps/samtools-bam-to-fastq-gf.git)
-    
+
+* [SanitizeMe Paired](https://gitlab.com/geneflow/workflows/sanitize-me-paired-gf.git)
+    * This workflow removes host sequences from paired-end reads using Minimap2 and SAMTools.
+    * GeneFlow Version: 1.x
+    * GeneFlow Apps:
+        * [SanitizeMe Paired Container](https://gitlab.com/geneflow/apps/sanitizemepaired-gf.git)
+ 
+
 ## Development Team and Support
 
 GeneFlow and the public reference workflows were developed by the GDIT Scientific Computing and Bioinformatics Support (SCBS) team for the Office of Advanced Molecular Detection (OAMD) at the CDC.
