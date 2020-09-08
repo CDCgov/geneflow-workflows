@@ -27,6 +27,27 @@ Public reference workflows and apps can be found here: https://gitlab.com/genefl
         * [BWA Index](https://gitlab.com/geneflow/apps/bwa-index-gf2.git)
         * [BWA Mem](https://gitlab.com/geneflow/apps/bwa-mem-gf2.git)
 
+* [GATK Variant Calling](https://gitlab.com/geneflow/workflows/gatk-variants-gf2.git)
+    * Trim, align, and call variants with GATK Haplotypecaller.
+    * GeneFlow Version: 2.x
+    * GeneFlow Apps:
+        * [Mask Repeats](https://gitlab.com/geneflow/apps/mask-repeats-gf2.git)
+        * [BWA Index](https://gitlab.com/geneflow/apps/bwa-index-gf2.git)
+        * [Index Reference](https://gitlab.com/geneflow/apps/index-reference-gf2.git)
+        * [FaQCs](https://git.biotech.cdc.gov/geneflow-apps/faqcs-gf2.git) 
+        * [BWA Align](https://gitlab.com/geneflow/apps/bwa-align-gf2.git)
+        * [BAM Sort](https://git.biotech.cdc.gov/geneflow-apps/bam-sort-gf2.git)
+        * [Picard Mark Duplicates](https://git.biotech.cdc.gov/geneflow-apps/picard-markduplicates-gf2.git)
+        * [Picard Clean SAM](https://git.biotech.cdc.gov/geneflow-apps/picard-cleansam-gf2.git)
+        * [Picard Fix Mate Information](https://git.biotech.cdc.gov/geneflow-apps/picard-fixmateinformation-gf2.git)
+        * [Picard Add or Replace Read Groups](https://git.biotech.cdc.gov/geneflow-apps/picard-addorreplacereadgroups-gf2.git)
+        * [BAM Index](https://git.biotech.cdc.gov/geneflow-apps/bam-index-gf2.git)
+        * [GATK Haplotype Caller](https://gitlab.com/geneflow/apps/gatk-haplotypecaller-gf2.git)
+        * [GATK Combine gVCFs](https://gitlab.com/geneflow/apps/gatk-combinegvcfs-gf2.git)
+        * [GATK Genotype gVCFs](https://gitlab.com/geneflow/apps/gatk-genotypegvcfs-gf2.git)
+        * [GATK Variant Filtration](https://gitlab.com/geneflow/apps/gatk-variantfiltration-gf2.git)
+        * [GATK Select Variants](https://gitlab.com/geneflow/apps/gatk-selectvariants-gf2.git)
+
 * [Nanopore Amplicon Dereplication](https://gitlab.com/geneflow/workflows/nanopore-amplicon-dereplication-gf.git)
     * This workflow takes basecalled, demultiplexed, and trimmed FASTQ files from Nanopore sequencing. It uses Canu to dereplicate the reads into amplicons, then uses Medaka to polish the amplicons using the trimmed FASTQ files. 
     * GeneFlow Version: 1.x
@@ -34,13 +55,13 @@ Public reference workflows and apps can be found here: https://gitlab.com/genefl
         * [Canu](https://gitlab.com/geneflow/apps/canu-gf.git)
         * [Medaka](https://gitlab.com/geneflow/apps/medaka-gf.git)
 
-* [NCBI SRA Upload](https://gitlab.com/geneflow/workflows/ncbi-lftp-sra-gridengine-upload-tool-workflow.git)
+* [NCBI SRA Uploader](https://gitlab.com/geneflow/workflows/ncbi-sra-uploader-gf2.git)
     * This workflow is an FTP bulk upload tool for NCBI SRA data. 
     * GeneFlow Version: 2.x
     * GeneFlow Apps:
         * [NCBI SRA FTP Uploader](https://gitlab.com/geneflow/apps/ncbi-lftp-sra-gridengine-upload-tool-gf2.git)
 
-* [NCBI GEO Upload](https://gitlab.com/geneflow/workflows/ncbi-lftp-geo-upload-tool-workflow.git)
+* [NCBI GEO Uploader](https://gitlab.com/geneflow/workflows/ncbi-lftp-geo-upload-tool-workflow.git)
     * This workflow is an FTP build upload tool for NCBI GEO data. 
     * GeneFlow Version: 1.x
     * GeneFlow Apps:
